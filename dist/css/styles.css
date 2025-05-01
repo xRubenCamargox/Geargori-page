@@ -10957,3 +10957,69 @@ html {
 #gear-team {
   color: #FAFAFA;
 }
+
+
+.how-it-works-section {
+  background-image: url('assets/fondo-niños.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+}
+
+
+.how-it-works-section .title {
+  font-size: 35px;
+  margin-bottom: 2rem;
+}
+
+.card-custom {
+  width: 29rem;
+  height: 14.5rem;
+  border-radius: 35px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-custom.green {
+  background-color: #36AB56;
+}
+
+.card-custom.orange {
+  background-color: #FB8C00;
+}
+
+.card-custom.green:hover {
+  background-color: #278040;
+  transform: translateY(-4px);
+}
+
+.card-custom.orange:hover {
+  background-color: #E65100;
+  transform: translateY(-4px);
+}
+
+.icon-img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 10px;
+}
+
+
+.card-body-custom {
+  text-align: center;
+  color: white;
+}
+
+.card-body-custom .card-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-body-custom .card-text {
+  font-size: 10px;
+  margin: 0;
+}
