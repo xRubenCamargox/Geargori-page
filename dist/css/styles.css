@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Modern Business v5.0.7 (https://startbootstrap.com/template-overviews/modern-business)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2025 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-modern-business/blob/master/LICENSE)
 */
 /*!
@@ -10845,4 +10845,37 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 15rem;
+}
+
+
+.features-custom {
+  .row {
+      display: flex;
+      align-items: stretch;
+  }
+
+  .col-lg-6:first-child {
+      background-image: url('../assets/capa 1.webp');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem;
+      min-height: 600px;
+
+     
+      @media (max-width: 991px) {
+          background-image: none;
+          background-color: transparent; 
+      }
+  }
+
+  .col-lg-6:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+  }
 }
