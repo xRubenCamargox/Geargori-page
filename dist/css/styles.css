@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Modern Business v5.0.7 (https://startbootstrap.com/template-overviews/modern-business)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2025 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-modern-business/blob/master/LICENSE)
 */
 /*!
@@ -10845,4 +10845,181 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 15rem;
+}
+
+
+.features-custom {
+  .row {
+      display: flex;
+      align-items: stretch;
+  }
+
+  .col-lg-6:first-child {
+      background-image: url('../assets/capa 1.webp');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem;
+      min-height: 600px;
+
+     
+      @media (max-width: 991px) {
+          background-image: none;
+          background-color: transparent; 
+      }
+  }
+
+  .col-lg-6:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+  }
+}
+
+#why-learn {
+  .row {
+      align-items: center; 
+  }
+
+  .icon-container {
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
+
+      img {
+          max-width: 70%;
+          max-height: 70%;
+      }
+  }
+
+  .cat-image {
+      max-width: 30%;
+      height: auto;
+      display: block; 
+      margin: 0 auto; 
+  }
+}
+
+#how-it-works {
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 1.25rem; /* más redondeado */
+    min-height: 300px; /* aumenta el tamaño vertical */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra suave */
+  }
+
+  .feature-green {
+    background-color: #3EC161;
+  }
+
+  .feature-green:hover {
+    background-color: #278040;
+    transform: translateY(-4px); /* pequeño levantamiento al hacer hover */
+  }
+
+  .feature-orange {
+    background-color: #FF9F00;
+  }
+
+  .feature-orange:hover {
+    background-color: #E65100;
+    transform: translateY(-4px);
+  }
+
+  .icon-wrapper {
+    width: 4.5rem;
+    height: 4.5rem;
+    img {
+      max-width: 60%;
+      max-height: 60%;
+    }
+  }
+
+  .h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+#gear-team {
+  color: #FAFAFA;
+}
+
+
+.how-it-works-section {
+  background-image: url('assets/fondo-niños.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+}
+
+
+.how-it-works-section .title {
+  font-size: 35px;
+  margin-bottom: 2rem;
+}
+
+.card-custom {
+  width: 29rem;
+  height: 14.5rem;
+  border-radius: 35px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-custom.green {
+  background-color: #36AB56;
+}
+
+.card-custom.orange {
+  background-color: #FB8C00;
+}
+
+.card-custom.green:hover {
+  background-color: #278040;
+  transform: translateY(-4px);
+}
+
+.card-custom.orange:hover {
+  background-color: #E65100;
+  transform: translateY(-4px);
+}
+
+.icon-img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 10px;
+}
+
+
+.card-body-custom {
+  text-align: center;
+  color: white;
+}
+
+.card-body-custom .card-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-body-custom .card-text {
+  font-size: 10px;
+  margin: 0;
 }
