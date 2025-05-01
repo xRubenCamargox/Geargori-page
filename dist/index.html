@@ -47,7 +47,7 @@
                 </div>
             </nav>
             <!-- pagina 1-->
-            <header class="py-5" style="background-color: #193359;">
+            <header class="py-5" style="background-color: #193359;" id="buttons-header">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="/src/assets/Robot1.webp" alt="..." /></div>
@@ -56,8 +56,8 @@
                                 <h1 class="display-5 fw-bolder text-white mb-2">Aprende Robótica Jugando con Geargori!</h1>
                                 <p class="lead fw-normal text-white-50 mb-4">La app que transforma el aprendizaje de robótica en una aventura divertida y desafiante. ¡Domina habilidades del futuro, un nivel a la vez!</p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-warning btn-lg px-4 me-sm-3 text-light" href="#what-is" style="border-radius: 50px; background-color: #FFA726">Descubre más</a>
-                                    <a class="btn btn-success btn-lg px-4" href="#!" style="border-radius: 50px; ">Prueba la beta ahora!</a>
+                                    <a class="btn btn-warning btn-lg px-4 me-sm-3 text-light button" href="#what-is" style="border-radius: 50px; background-color: #FFA726">Descubre más</a>
+                                    <a class="btn btn-success btn-lg px-4 button" href="#!" style="border-radius: 50px; ">Prueba la beta ahora!</a>
                                 </div>
                             </div>
                         </div>
@@ -76,9 +76,6 @@
                                     Avanzas completando niveles, desbloqueando logros y enfrentando desafíos interactivos.
                                     ¡Ideal para estudiantes, curiosos y futuros ingenieros!
                                 </p>
-                                <div class="d-grid gap-2 d-sm-flex mt-4">
-                                    <a class="btn btn-lg blue500 text-white rounded-pill" href="#next-section">Continuar</a>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -86,7 +83,7 @@
                         </div>
                     </div>
                     <div class="mt-5 text-center">
-                        <a class="btn btn-lg orange500 text-white rounded-pill" href="next-section">continuar</a>
+                        <a class="btn btn-success btn-lg px-4 button" href="#how-it-works" style="border-radius: 50px; background-color: #FFA726">continuar</a>
                     </div>
                 </div>
             </section>
@@ -95,7 +92,7 @@
                 <div class="container px-5 my-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-10 col-xl-7 text-center">
-                            <h3 class="text-red fw-bold title">¿Cómo funciona Geargori?</h3>
+                            <b><h3 class="text-white fw-bold title">¿Cómo funciona Geargori?</h3></b>
                         </div>
                     </div>
             
@@ -150,11 +147,11 @@
                                     <p class="mb-0">Desarrollo de habilidades en programación, lógica y creatividad.</p>
                                 </li>
                                 <li class="d-flex align-items-center mb-4">
-                                    <div class="icon-container bg-blue900 text-white"><img src="assets/mobile.webp" alt="Icono de móvil"></div>
+                                    <div class="icon-container bg-blue900 text-white"><img src="assets/mobile.png" alt="Icono de móvil"></div>
                                     <p class="mb-0">Aprende a tu ritmo, donde quieras.</p>
                                 </li>
                                 <li class="d-flex align-items-center">
-                                    <div class="icon-container bg-blue900 text-white"><img src="assets/mobile.png" alt="Icono de persona"></div>
+                                    <div class="icon-container bg-blue900 text-white"><i class="bi bi-person-fill"></i></div>
                                     <p class="mb-0">Sigue tu progreso y desafía a tus amigos.</p>
                                 </li>
                             </ul>
@@ -190,11 +187,17 @@
               
         </main>
 
-        <!-- Footer-->
+<!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
+                <hr style="color:white">
+                <hr style="color:white">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light" href="index.html">
+                            <img src="/src/assets/logo.webp" alt="Geargori" width="auto" height="70">
+                        </a>
+                    </div>
                     <div class="col-auto">
                         <a class="link-light small" href="#!">Privacy</a>
                         <span class="text-white mx-1">&middot;</span>
@@ -211,3 +214,4 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
