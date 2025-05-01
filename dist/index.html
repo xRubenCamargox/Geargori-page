@@ -7,11 +7,12 @@
         <meta name="author" content="" />
         <title>Modern Business - Start Bootstrap Template</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/logo.webp" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/colors.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -55,7 +56,7 @@
                                 <h1 class="display-5 fw-bolder text-white mb-2">Aprende Robótica Jugando con Geargori!</h1>
                                 <p class="lead fw-normal text-white-50 mb-4">La app que transforma el aprendizaje de robótica en una aventura divertida y desafiante. ¡Domina habilidades del futuro, un nivel a la vez!</p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-warning btn-lg px-4 me-sm-3 text-light" href="#features" style="border-radius: 50px; background-color: #FFA726">Descubre más</a>
+                                    <a class="btn btn-warning btn-lg px-4 me-sm-3 text-light" href="#what-is" style="border-radius: 50px; background-color: #FFA726">Descubre más</a>
                                     <a class="btn btn-success btn-lg px-4" href="#!" style="border-radius: 50px; ">Prueba la beta ahora!</a>
                                 </div>
                             </div>
@@ -64,38 +65,32 @@
                 </div>
             </header>
             <!-- pagina 2-->
-            <section class="py-5" id="features">
+            <section class="py-5 blue900 text-white features-custom" id="what-is">
                 <div class="container px-5 my-5">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">A better way to start building.</h2></div>
-                        <div class="col-lg-8">
-                            <div class="row gx-5 row-cols-1 row-cols-md-2">
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col mb-5 mb-md-0 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <div class="feature-text rounded p-5">
+                                <h2 class="fw-bolder mb-3">¿Qué es Geargori?</h2>
+                                <p class="mb-0">
+                                    Geargori es una app educativa que hace que aprender robótica sea tan emocionante como jugar.
+                                    Avanzas completando niveles, desbloqueando logros y enfrentando desafíos interactivos.
+                                    ¡Ideal para estudiantes, curiosos y futuros ingenieros!
+                                </p>
+                                <div class="d-grid gap-2 d-sm-flex mt-4">
+                                    <a class="btn btn-lg blue500 text-white rounded-pill" href="#next-section">Continuar</a>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-6">
+                            <img class="img-fluid rounded" src="assets/phone1.webp" alt="Imagen del teléfono">
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center">
+                        <a class="btn btn-lg orange500 text-white rounded-pill" href="next-section">continuar</a>
                     </div>
                 </div>
             </section>
-            <!-- pagina 3-->
+            <!-- Pagina 3 -->
             <div style="background-image: url('/src/assets/fondo-niños.jpg'); background-size: cover; background-position: center; width: 100%; height: 20%; margin: 0px;">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 justify-content-center">
@@ -131,44 +126,42 @@
                 </div>
             </div>
             <!-- pagina 4 -->
-             <section class="py-5" style="background-color: #193359; margin: 0px;">
-                <div class="container px-5">
-                    <div class="row gx-1 align-items-center justify-content-center">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div class="text-start">
-                                <h1 class="text-white" style="width: 25rem;">¿Por qué aprender robótica con Geargori?</h1>
-                                <img class="img-fluid rounded-3 my-5" src="/src/assets/cat.webp" alt="..." style="width: 150px; height: auto;" />
-                            </div>
-                        
-                            <div class="text-end">
-                                <div class="my-5 text-center text-xl-start">
-                                    <div class="d-flex align-items-baseline">
-                                        <i class="bi bi-lightning-fill" style="font-size: 2rem; color: white; fill: white; margin-right: 10px;"></i>
-                                        <p class="text-white mb-0">Contenido educativo actualizado y divertido.</p>
-                                    </div> <br>
-                                    <div class="d-flex align-items-baseline">
-                                        <i class="bi bi-award-fill" style="font-size: 2rem; color: white; fill: white; margin-right: 10px;"></i>
-                                        <p class="text-white mb-0">Enfoque basado en juego (gamificación)</p>
-                                    </div><br>
-                                    <div class="d-flex align-items-baseline">
-                                        <i class="bi bi-controller" style="font-size: 2rem; color: white; fill: white; margin-right: 10px;"></i>
-                                        <p class="text-white mb-0">Desarrollo de habilidades en programación, 
-                                            lógica y creatividad</p>
-                                    </div><br>
-                                    <div class="d-flex align-items-baseline">
-                                        <i class="bi bi-phone-fill" style="font-size: 2rem; color: white; fill: white; margin-right: 10px;"></i>
-                                        <p class="text-white mb-0">Aprende a tu ritmo, donde quieras.</p>
-                                    </div><br>  
-                                    <div class="d-flex align-items-baseline">
-                                        <i class="bi bi-person-fill" style="font-size: 2rem; color: white; fill: white; margin-right: 10px;"></i>
-                                        <p class="text-white mb-0">Sigue tu progreso y desafía a tus amigos</p>
-                                    </div>
-                                </div>
-                            </div>
+            <section id="why-learn" class="py-5 blue900 text-white">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-md-6 mb-5 mb-md-0">
+                            <h2 class="fw-bolder mb-4">¿Por qué aprender robótica con Geargori?</h2>
+                            <img class="img-fluid rounded cat-image" src="assets/cat.webp" alt="Imagen del robot Geargori">
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex align-items-center mb-4">
+                                    <div class="icon-container bg-blue900 text-white"><img src="assets/bolt.png" alt="Icono de rayo"></div>
+                                    <p class="mb-0">Contenido educativo actualizado y divertido.</p>
+                                </li>
+                                <li class="d-flex align-items-center mb-4">
+                                    <div class="icon-container bg-blue900 text-white"><img src="assets/medal.png" alt="Icono de medalla"></div>
+                                    <p class="mb-0">Enfoque basado en juego</p>
+                                </li>
+                                <li class="d-flex align-items-center mb-4">
+                                    <div class="icon-container bg-blue900 text-white"><img src="assets/gamepad.png" alt="Icono de control"></div>
+                                    <p class="mb-0">Desarrollo de habilidades en programación, lógica y creatividad.</p>
+                                </li>
+                                <li class="d-flex align-items-center mb-4">
+                                    <div class="icon-container bg-blue900 text-white"><img src="assets/mobile.webp" alt="Icono de móvil"></div>
+                                    <p class="mb-0">Aprende a tu ritmo, donde quieras.</p>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="icon-container bg-blue900 text-white"><img src="assets/mobile.png" alt="Icono de persona"></div>
+                                    <p class="mb-0">Sigue tu progreso y desafía a tus amigos.</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-             </section>
+            </section>
+            <!-- pagina 5 -->
+            
             <!-- Blog preview section-->
             <section class="py-5">
                 <div class="container px-5 my-5">
@@ -245,6 +238,9 @@
                             </div>
                         </div>
                     </div>
+                        
+                    
+                      
                     <!-- Call to action-->
                     <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
                         <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
@@ -263,7 +259,33 @@
                     </aside>
                 </div>
             </section>
+            <!-- Gear-Team-->
+            <section id="gear-team" class="blue900 py-5"> <div class="container"> <div class="row mb-4 mb-md-5"> <div class="col-12">
+                <h2 class="text-center section-title">Conoce al equipo detrás de Geargori</h2>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0 text-center">
+                <img src="assets/team.webp"Ilustración del equipo Geargori trabajando en computadoras" class="img-fluid">
+                 </div>
+
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-3">
+                    Apasionados por robótica educativa fácil para todos. El juego desarrolla el futuro. Pequeñas mentes, grandes creaciones.
+                </p>
+                <p class="mb-3">
+                    Transformamos aprender tecnología jugando intuitivamente. Retos emocionantes inspiran creatividad y lógica. Pequeñas mentes, grandes creaciones.
+                </p>
+                <p class="mb-0">
+                    Comprometidos con futuros innovadores. Abrimos puertas a programación y robótica motivadora. Pequeñas mentes, grandes creaciones.
+                </p>
+            </div>
+        </div>
+     </div> 
+</section>
+              
         </main>
+
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
