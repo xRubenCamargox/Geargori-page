@@ -10907,6 +10907,34 @@ html {
   }
 }
 
+.header-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-buttons li {
+  margin-right: 15px;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Transición para la animación */
+}
+
+.button:hover {
+  
+  color: #fff; /* Cambia el color del texto */
+  border: 2px solid #fff; /* Agrega un borde blanco */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
 #how-it-works {
   .feature {
     display: flex;
@@ -10960,7 +10988,7 @@ html {
 
 
 .how-it-works-section {
-  background-image: url('assets/fondo-niños.jpg');
+  background-image: url('/src/assets/fondo-niños.jpg');
   background-size: cover;
   background-position: center;
   padding: 4rem 0;
