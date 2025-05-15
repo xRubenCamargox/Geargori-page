@@ -10988,7 +10988,11 @@ html {
 
 
 .how-it-works-section {
+<<<<<<< HEAD:dist/css/styles.css
   background-image: url('/src/assets/fondo-niños.jpg');
+=======
+  background-image: url('/assets/fondo-niños.jpg');
+>>>>>>> 05ba08b8646ffe2b1e37619cc818f7669e0ad9de:css/styles.css
   background-size: cover;
   background-position: center;
   padding: 4rem 0;
