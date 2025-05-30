@@ -55,7 +55,7 @@
                                 <!-- To make this form functional, sign up at-->
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
-                                <form method="post" action="drive_contact.php">
+                                <form form id="contact-form">
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
                                         <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -85,12 +85,6 @@
                                     <!---->
                                     <!-- This is what your users will see when the form-->
                                     <!-- has successfully submitted-->
-                                    <div class="d-none" id="submitSuccessMessage">
-                                        <div class="text-center mb-3">
-                                            <div class="fw-bolder">¡Envío de formulario exitoso!</div>
-                                            <p>Gracias por contactarnos. Nos pondremos en contacto contigo pronto.</p>
-                                        </div>
-                                    </div>
                                     <!-- Submit error message-->
                                     <!---->
                                     <!-- This is what your users will see when there is-->
@@ -175,5 +169,93 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+                <!-- Modal de carga -->
+        <div class="modal fade" id="loadingModal" tabindex="-1" aria-hidden="true" style="background:rgba(0,0,0,0.5);">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark text-white text-center" style="background:rgba(0,0,0,0.85);border:none;">
+                    <div class="modal-body">
+                        <div class="spinner-border text-success mb-3" role="status"></div>
+                        <div>
+                            <strong>Enviando tu mensaje...</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true" style="background:rgba(0,0,0,0.5);">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-success text-white text-center" style="border:none;">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <i class="bi bi-check-circle-fill" style="font-size: 3rem;"></i>
+                        </div>
+                        <div class="fw-bolder mb-2">¡Envío de formulario exitoso!</div>
+                        <p>Gracias por contactarnos. Nos pondremos en contacto contigo pronto.</p>
+                        <button type="button" class="btn btn-light mt-2" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Firebase scripts -->
+        <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+        <script>
+            // Configuración de tu proyecto Firebase
+            const firebaseConfig = {
+                apiKey: "AIzaSyCuWNgSVRHgXlHXXiVIpIyZFVmUGpMcDEo",
+                authDomain: "geargori.firebaseapp.com",
+                projectId: "geargori",
+                storageBucket: "geargori.appspot.com",
+                messagingSenderId: "652044624245",
+                appId: "1:652044624245:web:09b74fadcfd11f80bdf33c",
+                measurementId: "G-EKVVBX8057"
+            };
+        
+            // Inicializa Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+        
+            // Instancia global de los modales
+            const loadingModalEl = document.getElementById('loadingModal');
+            const loadingModal = new bootstrap.Modal(loadingModalEl, {
+                backdrop: 'static',
+                keyboard: false
+            });
+            const successModalEl = document.getElementById('successModal');
+            const successModal = new bootstrap.Modal(successModalEl);
+        
+            // Maneja el envío del formulario de contacto
+            document.querySelector('form').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const nombre = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const mensaje = document.getElementById('message').value;
+        
+                // Mostrar modal de carga
+                loadingModal.show();
+        
+                try {
+                    await db.collection('contactar').add({
+                        nombre: nombre,
+                        email: email,
+                        mensaje: mensaje,
+                        fecha: new Date()
+                    });
+                    this.reset();
+                    loadingModal.hide();
+                    successModal.show();
+                    document.getElementById('submitSuccessMessage')?.classList.add('d-none');
+                    document.getElementById('submitErrorMessage')?.classList.add('d-none');
+                } catch (error) {
+                    loadingModal.hide();
+                    document.getElementById('submitSuccessMessage')?.classList.add('d-none');
+                    document.getElementById('submitErrorMessage')?.classList.remove('d-none');
+                    console.error(error);
+                }
+            });
+        </script>
     </body>
 </html>
