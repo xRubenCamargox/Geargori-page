@@ -1,0 +1,31 @@
+/* Add custom styles for download.html here */
+
+.download-header-background {
+    background-color: var(--bs-dark); /* Using Bootstrap dark color variable */
+}
+
+.header-logo-img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.header-feature-div {
+    background: linear-gradient(135deg, #000 60%, #222 100%);
+    padding: 3rem 0;
+    border-radius: 1rem;
+}
+
+.footer-hr {
+    color: var(--bs-white); /* Using Bootstrap white color variable */
+}
+
+.loading-modal-backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.loading-modal-content {
+    background: rgba(0, 0, 0, 0.85);
+    border: none;
+} 
